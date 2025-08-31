@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>Prepa Guide Web App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
+		<link rel="stylesheet" href="{{url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+                <!-- Intro -->
+				{%block intro%}{%endblock%}
+
+				<!-- Header -->
+				<header id="header">
+				    <a href="{{ url_for('main.index') }}" class="logo">Prepa_Guide</a>
+				</header>
+			
+				<!-- Nav bar -->
+				<nav id="nav">
+                	{%block nav%}{%endblock%}
+				</div>	
+
+				<!-- Main -->
+				<div id="main">
+					{%block main%}{%endblock%}
+				</div>
+                
+                <!-- Footer -->
+				<div id="footer">
+                	{%block footer%}{%endblock%} 
+				</div>
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					<ul><li>&copy; Untitled</li><li>Favicon: <a href="https://www.flaticon.com/free-icons/technology" title="technology icons">Technology icons created by Freepik - Flaticon</a></li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+			
+			<!-- Personalized functions -->
+			<script src="{{ url_for('static', filename='assets/js/extra.js') }}"></script>
+
+	</body>
+</html>
